@@ -7,7 +7,7 @@ writeToFile(FILE*file,int c, char**array)
 {
 char * tmp;
 //for time
-char tmp_time[104];
+char tmp_time[114];
 time_t rtime;
 time (&rtime);
 strftime (tmp_time, 114, "In %Y-%m-%d %H:%M:%S You write:", localtime (&rtime));
