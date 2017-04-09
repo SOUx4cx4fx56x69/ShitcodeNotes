@@ -5,7 +5,7 @@ typedef FILE;
 #define SEEK_END 2
 writeToFile(FILE*file,int c, char**array)
 {
-char * tmp;
+//char * tmp;
 //for time
 char tmp_time[114];
 time_t rtime;
@@ -16,7 +16,7 @@ fwrite("\n",1,sizeof("\n"),file);
 //
 for(int i=1; i!=c; i++)
 {
-  tmp = (char*)calloc( sizeof(char), strlen(array[i]) );
+ // tmp = (char*)calloc( sizeof(char), strlen(array[i]) );
   fwrite(array[i], strlen(array[i]), 1, file);
 }
 fwrite("\n",1,sizeof("\n"),file);
